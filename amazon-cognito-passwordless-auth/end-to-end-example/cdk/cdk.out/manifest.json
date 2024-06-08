@@ -1,0 +1,599 @@
+{
+  "version": "34.0.0",
+  "artifacts": {
+    "skgo.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "skgo.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "skgo": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "skgo.template.json",
+        "terminationProtection": false,
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/26ee54cf0f9d515fa675cef4291f618908d479f240fe68e0f991b17fe32383da.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "skgo.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "skgo.assets"
+      ],
+      "metadata": {
+        "/skgo/ExampleSpaBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExampleSpaBucketB0F9E86E"
+          }
+        ],
+        "/skgo/ExampleSpaBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExampleSpaBucketPolicy7D316D8D"
+          }
+        ],
+        "/skgo/ExampleSpaBucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExampleSpaBucketAutoDeleteObjectsCustomResourceCDF66C19"
+          }
+        ],
+        "/skgo/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/skgo/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/skgo/ExampleSpaOAI/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExampleSpaOAI458E1D3F"
+          }
+        ],
+        "/skgo/HeadersExampleSpa/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HeadersExampleSpaB3420FFC"
+          }
+        ],
+        "/skgo/ExampleSpaDistribution/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExampleSpaDistribution74BEDF51"
+          }
+        ],
+        "/skgo/Passwordless/KmsKeyRsaPasswordless/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessKmsKeyRsaPasswordlessF6E37D60"
+          }
+        ],
+        "/skgo/Passwordless/KmsKeyRsaPasswordless/Alias/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessKmsKeyRsaPasswordlessAliasB644EC4D"
+          }
+        ],
+        "/skgo/Passwordless/PreSignupPasswordless/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessPreSignupPasswordlessServiceRoleEA5CBD7C"
+          }
+        ],
+        "/skgo/Passwordless/PreSignupPasswordless/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessPreSignupPasswordless4A742C04"
+          }
+        ],
+        "/skgo/Passwordless/CreateAuthChallengePasswordless/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessCreateAuthChallengePasswordlessServiceRoleF563E878"
+          }
+        ],
+        "/skgo/Passwordless/CreateAuthChallengePasswordless/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessCreateAuthChallengePasswordlessServiceRoleDefaultPolicy92772054"
+          }
+        ],
+        "/skgo/Passwordless/CreateAuthChallengePasswordless/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessCreateAuthChallengePasswordless51381B62"
+          }
+        ],
+        "/skgo/Passwordless/VerifyAuthChallengeResponsePasswordless/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessVerifyAuthChallengeResponsePasswordlessServiceRoleE593DE53"
+          }
+        ],
+        "/skgo/Passwordless/VerifyAuthChallengeResponsePasswordless/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessVerifyAuthChallengeResponsePasswordlessServiceRoleDefaultPolicy7E3C4546"
+          }
+        ],
+        "/skgo/Passwordless/VerifyAuthChallengeResponsePasswordless/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessVerifyAuthChallengeResponsePasswordlessA0878D9F"
+          }
+        ],
+        "/skgo/Passwordless/DefineAuthChallengePasswordless/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessDefineAuthChallengePasswordlessServiceRole74C4D980"
+          }
+        ],
+        "/skgo/Passwordless/DefineAuthChallengePasswordless/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessDefineAuthChallengePasswordlessEC6A3147"
+          }
+        ],
+        "/skgo/Passwordless/PreTokenPasswordless/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessPreTokenPasswordlessServiceRoleAA5E04E8"
+          }
+        ],
+        "/skgo/Passwordless/PreTokenPasswordless/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessPreTokenPasswordless90BD5377"
+          }
+        ],
+        "/skgo/Passwordless/Fido2Passwordless/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessFido2PasswordlessServiceRole2AD3C4A3"
+          }
+        ],
+        "/skgo/Passwordless/Fido2Passwordless/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessFido2PasswordlessServiceRoleDefaultPolicyF00F9808"
+          }
+        ],
+        "/skgo/Passwordless/Fido2Passwordless/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessFido2PasswordlessA1DBE762"
+          }
+        ],
+        "/skgo/Passwordless/Fido2ChallengePasswordless/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessFido2ChallengePasswordlessServiceRole275A8AA8"
+          }
+        ],
+        "/skgo/Passwordless/Fido2ChallengePasswordless/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessFido2ChallengePasswordlessServiceRoleDefaultPolicyF79C351B"
+          }
+        ],
+        "/skgo/Passwordless/Fido2ChallengePasswordless/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessFido2ChallengePasswordlessA5A0FD2C"
+          }
+        ],
+        "/skgo/Passwordless/ApigwAccessLogsPasswordless/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessApigwAccessLogsPasswordless386F21A3"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordless3F299C9C"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessDeploymentA9C3B69Abfb4d0d0545c85751b4d10381a6c1cf7"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/DeploymentStage.v1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessDeploymentStagev1C37D843A"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessEndpointD4CE838B"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/register-authenticator/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessregisterauthenticator682B6387"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/register-authenticator/start/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessregisterauthenticatorstart042301B5"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/register-authenticator/start/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessregisterauthenticatorstartOPTIONSD7E5A160"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/register-authenticator/start/POST/ApiPermission.skgoPasswordlessRestApiPasswordlessDBDEC1ED.POST..register-authenticator.start": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessregisterauthenticatorstartPOSTApiPermissionskgoPasswordlessRestApiPasswordlessDBDEC1EDPOSTregisterauthenticatorstart97AF0CBB"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/register-authenticator/start/POST/ApiPermission.Test.skgoPasswordlessRestApiPasswordlessDBDEC1ED.POST..register-authenticator.start": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessregisterauthenticatorstartPOSTApiPermissionTestskgoPasswordlessRestApiPasswordlessDBDEC1EDPOSTregisterauthenticatorstart6C6DC8F2"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/register-authenticator/start/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessregisterauthenticatorstartPOST9CE18306"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/register-authenticator/complete/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessregisterauthenticatorcompleteC2D11CC6"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/register-authenticator/complete/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessregisterauthenticatorcompleteOPTIONS52D47EC9"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/register-authenticator/complete/POST/ApiPermission.skgoPasswordlessRestApiPasswordlessDBDEC1ED.POST..register-authenticator.complete": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessregisterauthenticatorcompletePOSTApiPermissionskgoPasswordlessRestApiPasswordlessDBDEC1EDPOSTregisterauthenticatorcompleteD0DE85D1"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/register-authenticator/complete/POST/ApiPermission.Test.skgoPasswordlessRestApiPasswordlessDBDEC1ED.POST..register-authenticator.complete": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessregisterauthenticatorcompletePOSTApiPermissionTestskgoPasswordlessRestApiPasswordlessDBDEC1EDPOSTregisterauthenticatorcomplete720E7C3A"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/register-authenticator/complete/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessregisterauthenticatorcompletePOST692B4A36"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/authenticators/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessauthenticatorsBF57B519"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/authenticators/list/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessauthenticatorslistA442C7CC"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/authenticators/list/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessauthenticatorslistOPTIONS47683C03"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/authenticators/list/POST/ApiPermission.skgoPasswordlessRestApiPasswordlessDBDEC1ED.POST..authenticators.list": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessauthenticatorslistPOSTApiPermissionskgoPasswordlessRestApiPasswordlessDBDEC1EDPOSTauthenticatorslistD991CA5A"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/authenticators/list/POST/ApiPermission.Test.skgoPasswordlessRestApiPasswordlessDBDEC1ED.POST..authenticators.list": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessauthenticatorslistPOSTApiPermissionTestskgoPasswordlessRestApiPasswordlessDBDEC1EDPOSTauthenticatorslistBF22F4D9"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/authenticators/list/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessauthenticatorslistPOSTC3CF5FE2"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/authenticators/delete/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessauthenticatorsdelete9D6ED765"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/authenticators/delete/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessauthenticatorsdeleteOPTIONS4ABBDA2C"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/authenticators/delete/POST/ApiPermission.skgoPasswordlessRestApiPasswordlessDBDEC1ED.POST..authenticators.delete": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessauthenticatorsdeletePOSTApiPermissionskgoPasswordlessRestApiPasswordlessDBDEC1EDPOSTauthenticatorsdelete46AA3CDC"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/authenticators/delete/POST/ApiPermission.Test.skgoPasswordlessRestApiPasswordlessDBDEC1ED.POST..authenticators.delete": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessauthenticatorsdeletePOSTApiPermissionTestskgoPasswordlessRestApiPasswordlessDBDEC1EDPOSTauthenticatorsdeleteD43ECA3D"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/authenticators/delete/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessauthenticatorsdeletePOST0EC54794"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/authenticators/update/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessauthenticatorsupdate091E5688"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/authenticators/update/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessauthenticatorsupdateOPTIONS3DC554BB"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/authenticators/update/POST/ApiPermission.skgoPasswordlessRestApiPasswordlessDBDEC1ED.POST..authenticators.update": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessauthenticatorsupdatePOSTApiPermissionskgoPasswordlessRestApiPasswordlessDBDEC1EDPOSTauthenticatorsupdate5DC65ED7"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/authenticators/update/POST/ApiPermission.Test.skgoPasswordlessRestApiPasswordlessDBDEC1ED.POST..authenticators.update": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessauthenticatorsupdatePOSTApiPermissionTestskgoPasswordlessRestApiPasswordlessDBDEC1EDPOSTauthenticatorsupdate1FF58FD1"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/authenticators/update/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlessauthenticatorsupdatePOSTD5511859"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/sign-in-challenge/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlesssigninchallengeCD03AB20"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/sign-in-challenge/OPTIONS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlesssigninchallengeOPTIONS555434BB"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/sign-in-challenge/POST/ApiPermission.skgoPasswordlessRestApiPasswordlessDBDEC1ED.POST..sign-in-challenge": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlesssigninchallengePOSTApiPermissionskgoPasswordlessRestApiPasswordlessDBDEC1EDPOSTsigninchallenge55FDE019"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/sign-in-challenge/POST/ApiPermission.Test.skgoPasswordlessRestApiPasswordlessDBDEC1ED.POST..sign-in-challenge": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlesssigninchallengePOSTApiPermissionTestskgoPasswordlessRestApiPasswordlessDBDEC1EDPOSTsigninchallengeF4422883"
+          }
+        ],
+        "/skgo/Passwordless/RestApiPasswordless/Default/sign-in-challenge/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PasswordlessRestApiPasswordlesssigninchallengePOST4EE1F1B7"
+          }
+        ],
+        "/skgo/SecretsTablePasswordless/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SecretsTablePasswordless8B664A61"
+          }
+        ],
+        "/skgo/Fido2AuthenticatorsTablePasswordless/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Fido2AuthenticatorsTablePasswordlessBDEAEEE6"
+          }
+        ],
+        "/skgo/UserPoolPasswordless/DefineAuthChallengeCognito": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolPasswordlessDefineAuthChallengeCognitoAD8ADD66"
+          }
+        ],
+        "/skgo/UserPoolPasswordless/CreateAuthChallengeCognito": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolPasswordlessCreateAuthChallengeCognito180FCC2A"
+          }
+        ],
+        "/skgo/UserPoolPasswordless/VerifyAuthChallengeResponseCognito": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolPasswordlessVerifyAuthChallengeResponseCognitoF2C3A5A5"
+          }
+        ],
+        "/skgo/UserPoolPasswordless/PreSignUpCognito": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolPasswordlessPreSignUpCognitoA31058A0"
+          }
+        ],
+        "/skgo/UserPoolPasswordless/PreTokenGenerationCognito": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolPasswordlessPreTokenGenerationCognito4D677421"
+          }
+        ],
+        "/skgo/UserPoolPasswordless/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolPasswordless1160377F"
+          }
+        ],
+        "/skgo/UserPoolPasswordless/UserPoolClientPasswordless/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolPasswordlessUserPoolClientPasswordless04425BF3"
+          }
+        ],
+        "/skgo/CognitoAuthorizerPasswordless/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CognitoAuthorizerPasswordlessE0617EE7"
+          }
+        ],
+        "/skgo/ApiGatewayCloudWatchLogsRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiGatewayCloudWatchLogsRole4E03D2EF"
+          }
+        ],
+        "/skgo/ApiGatewayAccountSetting": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiGatewayAccountSetting"
+          }
+        ],
+        "/skgo/ReqValidator/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ReqValidator1EEDC831"
+          }
+        ],
+        "/skgo/CompleteRegistrationModelPasswordless/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CompleteRegistrationModelPasswordlessBE02D60F"
+          }
+        ],
+        "/skgo/DeleteCredentialModelPasswordless/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeleteCredentialModelPasswordless3DF5E1E9"
+          }
+        ],
+        "/skgo/UpdateCredentialModelPasswordless/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UpdateCredentialModelPasswordless4AC08D92"
+          }
+        ],
+        "/skgo/Fido2ApiWebACLPasswordless": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Fido2ApiWebACLPasswordless"
+          }
+        ],
+        "/skgo/WafAssociationPasswordless": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "WafAssociationPasswordless"
+          }
+        ],
+        "/skgo/UserPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolId"
+          }
+        ],
+        "/skgo/UserPoolClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolClientId"
+          }
+        ],
+        "/skgo/Fido2Url": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Fido2Url"
+          }
+        ],
+        "/skgo/SpaUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SpaUrl"
+          }
+        ],
+        "/skgo/SpaBucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SpaBucket"
+          }
+        ],
+        "/skgo/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/skgo/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/skgo/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/skgo/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "skgo"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}

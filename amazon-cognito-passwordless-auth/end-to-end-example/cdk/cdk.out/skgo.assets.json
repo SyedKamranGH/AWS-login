@@ -1,0 +1,123 @@
+{
+  "version": "34.0.0",
+  "files": {
+    "b7f33614a69548d6bafe224d751a7ef238cde19097415e553fe8b63a4c8fd8a6": {
+      "source": {
+        "path": "asset.b7f33614a69548d6bafe224d751a7ef238cde19097415e553fe8b63a4c8fd8a6",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "b7f33614a69548d6bafe224d751a7ef238cde19097415e553fe8b63a4c8fd8a6.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "fa5673e37e6c8d10803792149b43df2cc0264807cb244bbc472f61b52bb1c1bf": {
+      "source": {
+        "path": "/home/syedkamran/React JS/amazon-cognito-passwordless-auth/end-to-end-example/cdk",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "fa5673e37e6c8d10803792149b43df2cc0264807cb244bbc472f61b52bb1c1bf.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "b3928866308a0c642627e36a9c4f8e922321dd22b41aba541919a1b8eff85ea7": {
+      "source": {
+        "path": "/home/syedkamran/React JS/amazon-cognito-passwordless-auth/end-to-end-example/cdk",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "b3928866308a0c642627e36a9c4f8e922321dd22b41aba541919a1b8eff85ea7.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "ce8218fdc84065fd6c1087aff3e549c0e5188d97566ec523a0d137d5f01b61ad": {
+      "source": {
+        "path": "/home/syedkamran/React JS/amazon-cognito-passwordless-auth/end-to-end-example/cdk",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "ce8218fdc84065fd6c1087aff3e549c0e5188d97566ec523a0d137d5f01b61ad.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "cef53f329d91fabb66e0554170e1b05cdd57861a42496dfe788b3faaf9ab2e22": {
+      "source": {
+        "path": "/home/syedkamran/React JS/amazon-cognito-passwordless-auth/end-to-end-example/cdk",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "cef53f329d91fabb66e0554170e1b05cdd57861a42496dfe788b3faaf9ab2e22.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "a24f080551af1410ec49063d4f193be8d3b6bff8b69c862057532c51cb87317f": {
+      "source": {
+        "path": "/home/syedkamran/React JS/amazon-cognito-passwordless-auth/end-to-end-example/cdk",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "a24f080551af1410ec49063d4f193be8d3b6bff8b69c862057532c51cb87317f.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "847c24c7fde3cc7615a60b668a45ffaa3da3f9ef664d3c5de3c02e47e070b326": {
+      "source": {
+        "path": "/home/syedkamran/React JS/amazon-cognito-passwordless-auth/end-to-end-example/cdk",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "847c24c7fde3cc7615a60b668a45ffaa3da3f9ef664d3c5de3c02e47e070b326.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "fea75e9f922fbee7f916805765ecbc86ef26fabc19683819f4c8326098412384": {
+      "source": {
+        "path": "/home/syedkamran/React JS/amazon-cognito-passwordless-auth/end-to-end-example/cdk",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "fea75e9f922fbee7f916805765ecbc86ef26fabc19683819f4c8326098412384.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "26ee54cf0f9d515fa675cef4291f618908d479f240fe68e0f991b17fe32383da": {
+      "source": {
+        "path": "skgo.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "26ee54cf0f9d515fa675cef4291f618908d479f240fe68e0f991b17fe32383da.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}
